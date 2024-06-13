@@ -20,3 +20,7 @@ Database ini memiliki 2 tabel, yaitu:
 Saat fungsi get dijalankan, kolom publisher_id pada games akan langsung menampilkan nama publisher dengan publisher_id yang sama.
 
 ![image](https://github.com/NicholasRudy2172020/CRUD-REST_API/assets/91111940/ff1ada7d-24c4-4284-bbe4-6b1347cd50a7)
+
+
+Backend proyek dibantu menggunakan tutorial dari geeksforgeeks, stackoverflow, dan github
+Frontend proyek dibuat dari tugas mandiri semester 4 (Pemrograman Web Lanjut - Bootstrap & Database)
