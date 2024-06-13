@@ -23,4 +23,5 @@ Saat fungsi get dijalankan, kolom publisher_id pada games akan langsung menampil
 
 
 Backend proyek dibantu menggunakan tutorial dari geeksforgeeks, stackoverflow, dan github
+
 Frontend proyek dibuat dari tugas mandiri semester 4 (Pemrograman Web Lanjut - Bootstrap & Database)
