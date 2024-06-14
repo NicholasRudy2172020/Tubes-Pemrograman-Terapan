@@ -23,3 +23,20 @@ Saat fungsi get dijalankan, kolom publisher_id pada games akan langsung menampil
 Backend proyek dibantu menggunakan geeksforgeeks, stackoverflow, dan github.
 
 Frontend proyek dibuat menggunakan struktur dan pengetahuan dari tugas mandiri semester 4 (Pemrograman Web Lanjut - Bootstrap & Database), dan github copilot (plugin VSCode) untuk memberikan bantuan keterangan dari kode yang dirancang (terutama bagian style.css & AJAX index.js)
+
+Hasil akhir:
+
+Tampilan UI dasar
+![image](https://github.com/NicholasRudy2172020/Tubes-Pemrograman-Terapan/assets/91111940/17eb55c0-48e4-46e4-a8a1-b2fa69cc4d57)
+
+Tampilan UI Add game & publisher
+![image](https://github.com/NicholasRudy2172020/Tubes-Pemrograman-Terapan/assets/91111940/f9d7261e-1688-4343-bbf6-a711a83a67bb)
+![image](https://github.com/NicholasRudy2172020/Tubes-Pemrograman-Terapan/assets/91111940/34af4d07-0f4e-4276-8452-bbbaf6a37e1d)
+
+Tampilan UI Edit game & publisher
+![image](https://github.com/NicholasRudy2172020/Tubes-Pemrograman-Terapan/assets/91111940/9f6ce0e5-4f76-4c97-b5cd-811ef45f65fc)
+![image](https://github.com/NicholasRudy2172020/Tubes-Pemrograman-Terapan/assets/91111940/fe0564be-9972-406a-b89d-3b01394c290c)
+
+Video demo / presentasi: TBA
+
+
