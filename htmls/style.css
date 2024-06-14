@@ -1,460 +1,134 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #202020; 
-    font-family: 'Verdana', 'Arial', sans-serif;
-  }
-  
-  /* :not(body)>h2{
-    
-  } */
-  
-  header {
-    /* background-color: #2783CE; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    border-bottom: 4px solid #2783CE;
-    color: white;
-  }
-    
-    #navbarbackground {
-      position: fixed;
-      top: 71px; /* Adjust this value based on your header height */
-      width: 40px;
-      height: 1000px; /* Adjust this value based on your desired background bar height */
-      background-color: #202020; /* Color of the background bar */
-      display: block; /* Initially hide the background bar */
-    }
-  
-    nav {
-      display: flex;
-      align-items: center;
-    }
-    
-    .logo {
-      text-decoration: none;
-      color: white;
-      /* font-weight: bold; */
-      margin-left: 10px;
-      margin-right: 20px;
-      font-size: 30px;
-      font-family: 'Permanent Marker', cursive;
-    }
-    
-    .search-bar {
-      position: absolute;
-      right: 16px;
-      background-color: white;
-      border-radius: 5px;
-      padding: 5px;
-      display: flex;
-    }
-    
-    .search-bar input {
-      border: none;
-      background-color: white;
-      color: white;
-      width: 150px;
-    }
-  
-  
-  /* The side navigation menu */
-  .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #202020; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {  
-    /* padding: 8px 8px 8px 32px; */
-    text-decoration: none;
-    font-size: 15px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  
-  img.thumbnail {
-    height: 150px; /* Adjust thumbnail size */
-    width: 150px;
-    object-fit: cover;
-    /* Add a border to thumbnails */
-    border: 2px solid #404040;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-  }
-  
-  
-  .parent {
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-right: 25px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(135px,  1fr)); /* Responsive grid layout */
-    gap: 25px;
-    grid-row-gap: 0px;
-  }
-  
-  .child {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  .banner {
-    margin-top: 5px;
-    margin-left: 20px;
-    margin-right: 25px;
-    height: 80px;
-    text-align: center;
-    background-color: #333; /* Dark background color for the banner */
-    color: #fff; /* Text color for the banner content */
-    padding: 5px;
-    position: relative;
-  }
-  
-  .banner-image {
-    width: 100%; /* Make the banner image fill the container */
-    max-height: 80px; /* Adjust the maximum height of the banner image */
-    object-fit: cover;
-    /* margin-bottom: 10px; */
-    z-index: 0; /* Ensure the overlay is behind the text */
-    filter: brightness(0.150);
-    border-radius: 1.5%;
-  }
-  
-  .banner-content {
-    position: absolute;
-    top: 50%; /* Adjust top value to vertically center the content */
-    left: 50%; /* Adjust left value to horizontally center the content */
-    transform: translate(-50%, -50%); /* Center the content */
-    text-align: center;
-    width: 1000px;
-  }
-  
-  
-  .bannerh2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    z-index: 2;
-  }
-  
-  .bannerp {
-    font-size: 16px;
-    margin-bottom: 20px;
-    z-index: 2;
-  }
-  
-  .bannerlink {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #2783CE; /* Accent color for the banner link */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    z-index: 2;
-  }
-  
-  .homepageFooter{
-    margin: 0 auto;
-  }
-  
-  footer {
-    background-color: #202020; /* Background color for the footer */
-    padding: 20px; /* Add padding to the footer */
-    text-align: center; /* Center-align the text within the footer */
-    color: white; /* Text color for the links */
-    border-top: 1px solid #2783CE; /* Border color and thickness */
-  }
-  
-  .footer-links {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px; /* Add margin between the links */
-  }
-  
-  a.filter-header {
-    background-color: #2783CE; /* Background color for the header links */
-    padding: 5px 10px; /* Adjust padding as needed */
-    margin-right: 10px; /* Adjust margin as needed */
-    margin-top: -5px;
-    border-radius: 5px; /* Add rounded corners */
-    text-decoration: none; /* Remove underline */
-    color: white; /* Text color for the header links */
-  }
-  
-  a.filter-selected {
-    background-color: #2e2e2e; /* Background color for the header links */
-    padding: 5px 10px; /* Adjust padding as needed */
-    margin-right: 10px; /* Adjust margin as needed */
-    margin-top: -5px;
-    border-radius: 5px; /* Add rounded corners */
-    text-decoration: none; /* Remove underline */
-    color: white; /* Text color for the header links */
-  }
-  
-  .banner2 {
-    margin-top: 5px;
-    margin-left: 15px;
-    margin-right: 25px;
-    height: 75px;
-    text-align: center;
-    background-color: #333; /* Dark background color for the banner */
-    color: #fff; /* Text color for the banner content */
-    padding: 5px;
-    position: relative;
-  }
-  
-  .banner-image2 {
-    width: 95%; /* Make the banner image fill the container */
-    max-height: 75px; /* Adjust the maximum height of the banner image */
-    object-fit: cover;
-    /* margin-bottom: 10px; */
-    z-index: 0; /* Ensure the overlay is behind the text */
-    filter: brightness(0.2);
-    border-radius: 3%;
-  }
-  
-  .header-links1 {
-    position: absolute;
-    left: 500px;
-    padding: 5px;
-    display: flex;
-  }
-  
-  .header-links1 a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px; /* Add margin between the links */
-  }
-  
-  .header-links2 {
-    position: absolute;
-    right: 180px;
-    padding: 5px;
-    display: flex;
-  }
-  
-  .header-links2 a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px; /* Add margin between the links */
-  }
-  
-  .banner3 {
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-    height: 600px;
-    text-align: center;
-    background-color: #333; /* Dark background color for the banner */
-    color: #fff; /* Text color for the banner content */
-    padding: 5px;
-    position: relative;
-  }
-  
-  .banner-image3 {
-    width: 100%; /* Make the banner image fill the container */
-    max-height: 600px; /* Adjust the maximum height of the banner image */
-    object-fit: cover;
-    z-index: 0; /* Ensure the overlay is behind the text */
-    filter: brightness(0.2);
-    border-radius: 3%;
-  }
-  
-  .regislogininput {
-    display: block;
-    margin: 10px auto; /* Center the inputs */
-    padding: 10px;
-    width: 80%; /* Set the width of the inputs */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    font-size: 16px; /* Adjust font size as needed */
-    text-align: center; /* Center the placeholder text */
-  }
-  
-  .regisloginbutton {
-    display: block;
-    margin: 10px auto; /* Center the button */
-    padding: 15px; /* Increase padding for a larger button */
-    width: 60%; /* Set the width of the button */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    font-size: 18px; /* Adjust font size as needed */
-    background-color: #2783CE; /* Add your desired button background color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;    
-  }
-  
-  .regisloginbutton:hover {
-    background-color: #1565C0; /* Add a different color for hover effect */
-  }
-  
-  .regislink {
-    /* Add these styles for the sign-up link */
-    display: block;
-    margin: 20px auto;
-    font-size: 18px;
-    text-align: center;
-    color: white;
-    /* color: #2783CE; */
-    text-decoration: none;
-  }
-  
-  .regislink:hover {
-    text-decoration: underline; /* Add underline on hover */
-  }
-  
-  .guide-list {
-    float: left;
-    margin-top: 15px;
-    padding-left: 15px;
-    width: 29%;
-    height: 450px;
-    overflow-y: auto;
-  }
-  
-  .guide-item {
-    margin-bottom: 10px;
-    background-color: #2e2e2e; /* Background color for the header links */
-    padding: 5px 10px; /* Adjust padding as needed */
-    margin-left: 20px; /* Adjust margin as needed */
-    border-radius: 5px; /* Add rounded corners */
-    text-decoration: none; /* Remove underline */
-    color: white; /* Text color for the header links */
-  }
-  
-  .guide-item-child {
-    margin-bottom: 10px;
-    background-color: #222222; /* Background color for the header links */
-    padding: 5px 10px; /* Adjust padding as needed */
-    margin-left: 30px; /* Adjust margin as needed */
-    margin-top: -5px;
-    border-radius: 5px; /* Add rounded corners */
-    text-decoration: none; /* Remove underline */
-    color: white; /* Text color for the header links */
-  }
-  
-  .guide-item a, .guide-item-child a {
-    color: white; /* Text color for the header links */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .guide-item-child a:hover {
-    text-decoration: underline; /* Add underline on hover */
-  }
-  
-  .guide-image{
-    max-width: 280px;
-    max-height: 220px;
-    padding: 5px;
-  }
-  
-  table {
-    border-collapse: collapse;
-    margin-left: 30px;
-    margin-right: 30px
-  }
-  tr { 
-    border: solid #2a2a2a;
-    border-width: 1px 0;
-  } 
-  
-  tr:first-child {
-    border-top: none;
-  }
-  tr:last-child {
-    border-bottom: none;
-  }
-  
-  .iframe-preview {
-    float: right;
-    margin-top: 15px;
-    padding-right: 30px;
-    width: 67%;
-    height: 450px;
-  }
-  
-  iframe {
-    width: 100%;
-    height: 100%;
-    border: solid #2a2a2a;
-  }
-  
-  .popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-  .popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #3f3f3f;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #585858;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #6E6E6E;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #383838;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  border: 1px solid #555;
+  padding: 8px;
+  text-align: left;
+  color: #ffffff;
+}
+
+table th {
+  background-color: #444;
+}
+
+table tr:nth-child(even) {
+  background-color: #3a3a3a;
+}
+
+button {
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  background-color: #444;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.modal-content input[type=text], .modal-content select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #555;
+  color: #ffffff;
+}
+
+.modal-content button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  z-index: 1040;
+}
+
+/* Additional styling for better contrast and readability */
+input[type=text]::placeholder, select::placeholder {
+  color: #b0b0b0;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
